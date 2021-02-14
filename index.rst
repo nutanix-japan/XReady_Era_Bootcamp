@@ -10,14 +10,14 @@
 ..   se_reserve/se_reserve
 ..   create/create
 ..
-.. .. toctree::
-..    :maxdepth: 2
-..    :caption: Era Lab Setup
-..    :name: _dbs
-..    :hidden:
-..
-..    era_install/era_install
-..   labsetup/labsetup
+.. toctree::
+   :maxdepth: 2
+   :caption: Era Lab Setup
+   :name: _dbs
+   :hidden:
+
+   era_install/era_install
+   labsetup/labsetup
 
 .. toctree::
    :maxdepth: 2
