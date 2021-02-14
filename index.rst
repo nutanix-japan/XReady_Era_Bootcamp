@@ -129,13 +129,13 @@ Era with MSSQL Track
 - Deploy MSSQL with Era
 - Patching MSSQL
 
-Era with oracle Track
-.....................
-
-- Configure Oracle
-- Deploy Oracle with Era
-- Patching Oracle with Era
-- Admin Oracle with Era
+.. Era with Oracle Track
+.. .....................
+..
+.. - Configure Oracle
+.. - Deploy Oracle with Era
+.. - Patching Oracle with Era
+.. - Admin Oracle with Era
 
 Assessment
 ...........
