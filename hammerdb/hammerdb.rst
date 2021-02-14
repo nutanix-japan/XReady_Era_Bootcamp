@@ -158,7 +158,7 @@ This will give you an opportunity to learn to use HammerDB tool and prepare you 
 Database Test 2 (with best practices on SQL by Era)
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Repeat the above steps for a *Initials*\ -MSSQL2 (one deployed using Era) server with database and log files on different drives and record the results.
+Repeat the above steps for any VM deployed using Era server with database and log files on different drives and record the results.
 
 ..
 .. Let's simulate a scenario where best practices for MS SQL databases are not followed. In this screnario the data and log files for a SQL database is in the same drive.

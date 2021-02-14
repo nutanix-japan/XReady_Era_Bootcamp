@@ -49,8 +49,8 @@
   :hidden:
 
   prismops_appmonitoring_lab/prismops_appmonitoring_lab
-  era_rest_api/era_rest_api
   hammerdb/hammerdb
+  era_rest_api/era_rest_api
 ..  flow_secure_fiesta/flow_secure_fiesta
   flow_isolate_fiesta/flow_isolate_fiesta
 
