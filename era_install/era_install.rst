@@ -41,13 +41,13 @@ Era VM Deployment
 
    - In the **Type or paste script** text box, paste the following script, and replace the indicated references (ex. <NETMASK-IP> would be 255.255.255.128).
 
-      .. code-block:: bash
+     .. code-block:: bash
 
-         #cloud-config
-         runcmd:
-          - configure_static_ip ip=<STATIC-IP-ADDRESS> gateway=<GATEWAY-ADDRESS> netmask=<NETMASK-IP> nameserver=<NAMESERVER>
+       #cloud-config
+       runcmd:
+        - configure_static_ip ip=<STATIC-IP-ADDRESS> gateway=<GATEWAY-ADDRESS> netmask=<NETMASK-IP> nameserver=<NAMESERVER>
 
-      All parameters except the *nameserver* parameter are mandatory.
+   - All parameters except the *nameserver* parameter are mandatory.
 
 #. Click the **Save** button to create the VM.
 
@@ -90,11 +90,13 @@ Era Configuration
 
 #. Click **Next**
 
-      .. figure:: images/era1.png
+   .. figure:: images/era1.png
 
 #. (Optional) Configure the SMTP server.
 
-    If you do not configure this, remove the e-mail address listed within the *Sender's Email* box.
+    .. note::
+
+    	If you do not configure this, remove the e-mail address listed within the *Sender's Email* box.
 
 #. In the **Era Server's OS Time Zone** list, select a timezone, or leave the default UTC.
 
@@ -118,7 +120,7 @@ Era Configuration
 
 #. Click **Get Started**.
 
-    The **Getting Started** page describes how to register and provision databases in Era. You can also open the main menu and start using the product.
+   The **Getting Started** page describes how to register and provision databases in Era. You can also open the main menu and start using the product.
 
    .. figure:: images/era6.png
 
@@ -209,7 +211,7 @@ Create Oracle Network Profile
 
 #. Click **Create**
 
-Conpute Profile Configuration
+Compute Profile Configuration
 ............................
 
 #. From the dropdown, choose **Profiles**.
