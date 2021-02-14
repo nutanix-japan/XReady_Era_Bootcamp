@@ -20,9 +20,9 @@ Lab Agenda
 Install HammerDB
 ++++++++++++++++++++
 
-#. Select your *Initials*-MSSQL-Manual VM and click **Actions > Power On**.
+#. Select your *UserXX*-MSSQLSource VM and click **Actions > Power On**. (if not already powered on)
 
-#. Log in to the VM using Remote Desktop Client/Console using the Administrator password you configured in **Manual VM Deployment** in :ref:`deploy_mssql` lab.
+#. Log in to the VM using Remote Desktop Client/Console using the Administrator password you configured in :ref:`deploy_mssql` lab.
 
 #. Download the HammerDB setup binaries on your VM from `here <http://10.42.194.11/workshop_staging/HammerDB/HammerDB-3.3-Win-x86-64-Setup.exe>`_. (Copy link address)
 
@@ -52,10 +52,10 @@ This will give you an opportunity to learn to use HammerDB tool and prepare you 
 
    ::
 
-     E:\data
-     F:\data
-     G:\data
-     I:\logs
+     D:\data
+     D:\data1
+     D:\data2
+     D:\logs
 
 #. Right click on databases and select **New database**.
 
@@ -65,17 +65,15 @@ This will give you an opportunity to learn to use HammerDB tool and prepare you 
 
 #. In the Database files table, scroll and select the path for tpcc and tpcc_log folder.
 
-#. For tpcc, set path to ``E:\data``.
+#. For tpcc, set path to ``D:\data``.
 
-#. For tpcc_log, set path to ``I:\logs``.
+#. For tpcc_log, set path to ``D:\logs``.
 
 #. Click on **Add** button twice to create two more database files.
 
-#. Name them as **tpcc_f** and **tpcc_g**.
+#. Name them as **tpcc_d1** and **tpcc_d2**.
 
-#. Set the path for two files as ``F:\data`` and ``G:\data``.
-
-   .. figure:: images/newdbpath.png
+#. Set the path for two files as ``D:\data1`` and ``D:\data2``.
 
 #. To make sure the tables are created properly, right click on **tpcc** DB and select properties. Click on **Files** and make sure the path of the folders are set right.
 
@@ -116,14 +114,14 @@ This will give you an opportunity to learn to use HammerDB tool and prepare you 
    .. note::
       If you close HammerDB, populating of data will stop
 
-#. Go to the drives ``E\data``, ``F:\data``, ``F:\data``, ``I:\logs`` and check if the size of the folders is increasing.
+#. Go to the drives ``D:\data``, ``D:\data1``, ``D:\data2``, ``D:\logs`` and check if the size of the folders is increasing.
 
 #. Wait until the data gets generated. This generates up to 15GB of data.
 
    .. note::
       It may take from 15 - 20 minutes for data population
 
-#. Once the data is generated, open hammer db that is already minimized.
+#. Once the data is generated, open hammer db that is already minimised.
 
 #. Click on Destroy Virtual Users.
 
@@ -157,69 +155,72 @@ This will give you an opportunity to learn to use HammerDB tool and prepare you 
 #. Take screenshots and send TPM results to prospective customers or use it for your own reference.
 
 
-Database Test 2 (without best practices on SQL)
-+++++++++++++++++++++++++++++++++++++++++++++++
+Database Test 2 (with best practices on SQL by Era)
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Let's simulate a scenario where best practices for MS SQL databases are not followed. In this screnario the data and log files for a SQL database is in the same drive.
+Repeat the above steps for a *Initials*\ -MSSQL2 (one deployed using Era) server with database and log files on different drives and record the results.
 
-#. Repeat the same procedure for another database.
+..
+.. Let's simulate a scenario where best practices for MS SQL databases are not followed. In this screnario the data and log files for a SQL database is in the same drive.
+..
+.. #. Repeat the same procedure for another database.
+..
+.. #. Name the datbase **tpcc1**
+..
+.. #. For tpcc1, set path to ``E:\data``.
+..
+.. #. For tpcc1_log, set path to ``E:\logs``. (create logs folder)
+..
+.. #. Populate the database with data using the same procedure as above in HammerDB.
+..
+.. #. Wait for the data to be populated
+..
+..    .. note::
+..       It may take from 15 - 20 minutes for data population
+..
+.. #. Confirm data is populated using the same procedure as above.
+..
+.. #. Click on Destroy Virtual Users.
+..
+..    .. figure:: images/destroyvirtusers.png
+..
+.. #. Double click on **Driver Script > Options**. Make sure **SQL Server Database** name is **tpcc1** (the database you created in the previous few steps).
+..
+.. #. Select "TPC-C driver script" as **Timed Driver Script**.
+..
+.. #. Leave rest of them as-is and select **OK**.
+..
+..    .. note::
+..     **Optional:** You can also try using the option **Keying and thinking time** for making the IOPS more intensive.
+..
+..    .. figure:: images/drvscript.png
+..
+.. #. Double click on **Load**
+..
+.. #. Go to **Virtual users** and click on **Options**.
+..
+.. #. Make sure **Virtual users** in the popped-up window is 17 and click **OK**
+..
+.. #. Double click on **Create** and then double click on **Run** operations.\
+..
+..    .. figure:: images/setvirtusers.png
+..
+.. #. While IO is getting generated, click on **Transactions Counter** and note the **TPM**. (Start the TPM counter if not already started)
+..
+..    .. figure:: images/singletpm.png
+..
+.. #. Take screenshots and send TPM results to prospective customers or use it for your own reference.
+..
+..    .. note::
+..       You should now notice that a database configured withouth following best practices performs slower than the database created following best practices.
+..       In this case, the database **tpcc1** is four times slower than database **tpcc**.
+..
+..    .. note::
+..       Please note that the test used here are using heavy I/O. Consider changing them in your own test to suit customers workloads.
+..
+Also check the **I/O Metrics** in Prism Element for this VM to see if you can observe I/O patterns, latencies, SSD/HDD usage and block sizes of files used by the VM you are running HammerDB tests on.
 
-#. Name the datbase **tpcc1**
-
-#. For tpcc1, set path to ``E:\data``.
-
-#. For tpcc1_log, set path to ``E:\logs``. (create logs folder)
-
-#. Populate the database with data using the same procedure as above in HammerDB.
-
-#. Wait for the data to be populated
-
-   .. note::
-      It may take from 15 - 20 minutes for data population
-
-#. Confirm data is populated using the same procedure as above.
-
-#. Click on Destroy Virtual Users.
-
-   .. figure:: images/destroyvirtusers.png
-
-#. Double click on **Driver Script > Options**. Make sure **SQL Server Database** name is **tpcc1** (the database you created in the previous few steps).
-
-#. Select "TPC-C driver script" as **Timed Driver Script**.
-
-#. Leave rest of them as-is and select **OK**.
-
-   .. note::
-    **Optional:** You can also try using the option **Keying and thinking time** for making the IOPS more intensive.
-
-   .. figure:: images/drvscript.png
-
-#. Double click on **Load**
-
-#. Go to **Virtual users** and click on **Options**.
-
-#. Make sure **Virtual users** in the popped-up window is 17 and click **OK**
-
-#. Double click on **Create** and then double click on **Run** operations.\
-
-   .. figure:: images/setvirtusers.png
-
-#. While IO is getting generated, click on **Transactions Counter** and note the **TPM**. (Start the TPM counter if not already started)
-
-   .. figure:: images/singletpm.png
-
-#. Take screenshots and send TPM results to prospective customers or use it for your own reference.
-
-   .. note::
-      You should now notice that a database configured withouth following best practices performs slower than the database created following best practices.
-      In this case, the database **tpcc1** is four times slower than database **tpcc**.
-
-   .. note::
-      Please note that the test used here are using heavy I/O. Consider changing them in your own test to suit customers workloads.
-
-#. Also check the **I/O Metrics** in Prism Element to see if you can observe I/O patterns, latencies, SSD/HDD usage and block sizes of files used by the VM you are running HammerDB tests on.
-
-   .. figure:: images/vmiopattern.png
+.. figure:: images/vmiopattern.png
 
 Takeaways
 ++++++++++
