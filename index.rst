@@ -31,16 +31,16 @@
    webtier/webtier
    patch_sql/patch_sql
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Era with Oracle Track (Optional)
+   :name: _dbs
+   :hidden:
 
-..    :maxdepth: 2
-..    :caption: Era with Oracle Track
-..    :name: _dbs
-..    :hidden:
-..
-..    configure_oracle/configure_oracle
-..    deploy_oracle_era/deploy_oracle_era
-..    admin_oracle/admin_oracle
-..    patching_oracle/patching_oracle
+   configure_oracle/configure_oracle
+   deploy_oracle_era/deploy_oracle_era
+   admin_oracle/admin_oracle
+   patching_oracle/patching_oracle
 
 .. toctree::
   :maxdepth: 2
