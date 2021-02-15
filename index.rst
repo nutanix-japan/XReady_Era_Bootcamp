@@ -49,6 +49,7 @@
   :hidden:
 
   prismops_appmonitoring_lab/prismops_appmonitoring_lab
+  deploy_oracle_rac_era/deploy_oracle_rac_era
   hammerdb/hammerdb
   era_rest_api/era_rest_api
 ..  flow_secure_fiesta/flow_secure_fiesta
