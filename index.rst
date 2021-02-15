@@ -89,7 +89,7 @@ The Nutanix Enterprise Cloud removes many of these challenges and makes virtuali
 In addition to solving common infrastructure problems for hosting business critical applications, Nutanix also seeks to address many of the key pain points associated with managing databases.
 
 .. figure:: images/4.png
-.. 
+..
 .. Based on a 2018 IDC study of 500 North American companies with more than 1,000 employees, they estimate:
 ..
 .. - 77% of the organizations have more than 200 database instances in their production
@@ -98,7 +98,7 @@ In addition to solving common infrastructure problems for hosting business criti
 .. - 32% of database clones require daily refreshes for analytics of dev/test
 .. - Copy data will cost IT organizations $55.63 billion in 2020
 
-Maintaining the status quo leads to inefficient usage of both storage and worse, of administrator time. Meet Nutanix Era.
+Maintaining the status quo leads to inefficient usage of both storage and administrator time. Meet Nutanix Era.
 
 .. figure:: images/5.png
 
