@@ -10,9 +10,9 @@ Traditional database VM deployment resembles the diagram below. The process gene
 
 Whereas with a Nutanix cluster and Era, provisioning and protecting a database should take you no longer than it took to read this intro.
 
-   .. note::
+.. note::
 
-      During this workshop, if you receive any errors when inputting information, that may be a result of copying and pasting into that particular screen. Please attempt to manually type in the same information, and proceed
+  During this workshop, if you receive any errors when inputting information, that may be a result of copying and pasting into that particular screen. Please attempt to manually type in the same information, and proceed
 
 Exploring Era Resources
 +++++++++++++++++++++++
@@ -46,10 +46,10 @@ Era is distributed as a virtual appliance that can be installed on either AHV or
 
    Profiles pre-define resources and configurations, making it simple to consistently provision environments and reduce configuration sprawl. For example, a *Compute* Profile specifies the size of the database server, including details such as vCPUs, cores per vCPU, and memory.
 
-Register Oracle Server with Era
-+++++++++++++++++++++++++++++++
+Register Database Server with Era
+++++++++++++++++++++++++++++++++++
 
-In this exercise, you will register your Oracle VM as version 1.0 of your Oracle 19c Software Profile. The Software Profile is a template containing both the operating system and database software, and can be used to deploy additional database servers.
+In this exercise, you will register your Oracle VM to Era.
 
 #. Within **Era**, select **Database Server VMs** from the dropdown menu, and then **List** from the left-hand menu.
 
@@ -73,13 +73,23 @@ In this exercise, you will register your Oracle VM as version 1.0 of your Oracle
 
       Grid Infrastructure Home is the directory where the Oracle Grid Infrastructure software is installed. This is only applicable for Oracle RAC or SIHA databases.
 
-#. If you see a similar warning as below, you can safely ignore it.
+#. If you see a similar warning as below during registration, you can install 'sshpass' using the following instructions by ssh'ing to the VM, after the VM registration finishes in Era.
 
    .. figure:: images/2a.png
 
+   .. code-block:: bash
+
+     sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+     sudo yum install -y sshpass
+
 #. Select **Operations** from the dropdown menu to monitor the registration. This process should take approximately 5 minutes. Wait for the registration operation to successfully complete before proceeding.
 
-   Once the *Initials*\ **_oracle_base** database has been registered within Era from your *UserXX*\ **-Oracle19cSource** VM, we need to create a software profile in order to deploy additional copies of this Oracle database.
+Create a Database Profile
+++++++++++++++++++++++++++++++
+
+In this section you will register as version 1.0 of your Oracle 19c Software Profile. The Software Profile is a template containing both the operating system and database software, and can be used to deploy additional database servers.
+
+Once the base *UserXX*\ **-Oracle19cSource** VM has been registered within Era, we need to create a software profile in order to deploy additional copies of this Oracle database.
 
 #. Select **Profiles** from the dropdown menu, and then **Software** from the left-hand menu.
 
@@ -93,8 +103,8 @@ In this exercise, you will register your Oracle VM as version 1.0 of your Oracle
 
 #. Select **Operations** from the dropdown menu to monitor the registration. This process should take approximately 5 minutes.
 
-Register Your Database
-++++++++++++++++++++++
+Register Database with Era
+++++++++++++++++++++++++++++++
 
 #. In **Era**, select **Databases** from the dropdown menu, and then **Sources** from the left-hand menu.
 

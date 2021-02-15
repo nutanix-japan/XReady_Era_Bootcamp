@@ -66,6 +66,6 @@ In this exercise you will deploy a fresh Oracle database using your *Initials*\ 
 
 #. Click **Provision** to begin creating your new database server VM containing your *Initials*\ _proddb database.
 
-#. Select **Operations** from the dropdown menu to monitor the provisioning. This process should take approximately 60 minutes.
+#. Select **Operations** from the dropdown menu to monitor the provisioning.
 
-#. Proceed to the following exercises only after the database has completed provisioning.
+#. Proceed to the following exercises only after the database has completed provisioning. This process should take approximately 30 minutes.
