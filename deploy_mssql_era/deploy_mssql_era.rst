@@ -13,7 +13,7 @@ You've completed all the one time operations required to be able to provision an
 
 #. Within **Era**, select **Databases** from the dropdown menu, and **Sources** from the left-hand menu.
 
-#. Click **+ Provision > Microsoft SQL Server > Database**.
+#. Click **+ Provision > Microsoft SQL Server > Single Node Server VM**.
 
    .. figure:: images/18.png
 

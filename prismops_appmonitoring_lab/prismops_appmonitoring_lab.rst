@@ -31,7 +31,7 @@ Prism Ultimate licensing includes the SQL Server monitoring pack, which allows I
 
       Pay close attention to the other features you may have, or will enable in Prism Central in addition to what is outlined in this workshop. Please refer to `Prism Central: Resource Requirements for various services enablement on Prism Central <https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000brBgCAI>`_ for considerations regarding resources.
 
-#. Select the IP address of you MSSQL server VM within the *Microsoft SQL Server Host*. Fill in the rest of the fields with the information listed below. The *Microsoft SQL Server Port* field should be auto-filled with 1433 (standard SQL port). Click on **Test Connection**, and once that is successful, click **Save**.
+#. Select the IP address of your MSSQL server (UserXX-MSSQLSource) VM within the *Microsoft SQL Server Host*. Fill in the rest of the fields with the information listed below. The *Microsoft SQL Server Port* field should be auto-filled with 1433 (standard SQL port). Click on **Test Connection**, and once that is successful, click **Save**.
 
    - **Microsoft SQL Server Port** 1433
    - **username:** sa

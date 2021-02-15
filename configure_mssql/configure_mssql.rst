@@ -176,7 +176,7 @@ You must meet the following Era requirements before you register a SQL Server da
 Creating A Software Profile
 +++++++++++++++++++++++++++
 
-Before additional SQL Server VMs can be provisioned, a Software Profile must first be created from the database server VM registered in the previous step. A software profile is a template that includes the SQL Server database and operating system. This template exists as a hidden, cloned disk image on your Nutanix storage.
+Before additional SQL Server VMs can be provisioned, a Software Profile must first be created from the database server VM registered in the previous step. A software profile is a template that includes the SQL Server binaries and operating system. This template exists as a hidden, cloned disk image on your Nutanix storage.
 
 #. Within **Era**, select **Profiles** from the dropdown menu, and then **Software** from the left-hand menu.
 
