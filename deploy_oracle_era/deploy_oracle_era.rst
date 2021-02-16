@@ -20,7 +20,7 @@ In this exercise you will deploy a fresh Oracle database using your *Initials*\ 
    - **Compute Profile** - ORACLE_SMALL
    - **Network Profile** - Primary_ORACLE_NETWORK
    - Select **Enable High Availability**
-   - **SYS ASM Password** - Nutanix/4u
+   - **SYS ASM Password** - Nutanix#4u
    - **SSH Public Key for Node Access** - Select **Text** and copy and paste the below into the *Text* box.
 
    ::

@@ -36,7 +36,7 @@ This VM is running Oracle 19c with April PSU patches applied.
 
 #. Select VM and click **Actions > Power On**.
 
-Patching Base Oracle VM
+Patching Oracle VM
 +++++++++++++++++++++++
 
 In this exercise, you will apply the October PSU patches to your manually cloned VM, register the database server with Era, and then use it as the basis for creating a new version of your *Initials*\ **_ORACLE_19C** Software Profile.
@@ -63,7 +63,7 @@ In this exercise, you will apply the October PSU patches to your manually cloned
 
    .. figure:: images/8.png
 
-Registering Base Oracle VM
+Registering Oracle VM
 +++++++++++++++++++++++++++++++
 
 #. Once the scripts have finished, return to **Era > Database Server VMs > List**.
