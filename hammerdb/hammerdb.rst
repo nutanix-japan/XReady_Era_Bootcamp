@@ -43,8 +43,8 @@ Install HammerDB
 
    .. figure:: images/1.png
 
-Database Test 1 (with best practices on SQL)
-+++++++++++++++++++++++++++++++++++++++++++++
+Database Test 1 (without best practices on SQL)
+++++++++++++++++++++++++++++++++++++++++++++++++
 
 In this section you will create a sample database (tpcc) following MS SQL Best Practices for database files on different drives. Once created, you will populate the database with data using HammerDB tool and run IO tests on it.
 
