@@ -8,8 +8,8 @@ Maintaining consistent patch levels across database servers in a traditional env
 
 **In this lab you will walk through the deployment and patching of both Oracle and Grid software for an Oracle 19c database using Era.**
 
-Source Oracle VM
-++++++++++++++++
+Clone Oracle VM
++++++++++++++++++++++
 
 **In this lab you will deploy a Oracle VM, by cloning a source Oracle 19c Source VM. This VM will act as a master image to create a profile for deploying additional Oracle VMs using Era.**
 
