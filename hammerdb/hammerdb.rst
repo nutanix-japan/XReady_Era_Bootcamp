@@ -4,7 +4,13 @@
 Performance Testing of MSSQL using HammerDB
 ------------------------------------------------
 
-In this bonus lab you will install HammerDB tool and use it to benchmark MSSQL database performance on a given VM
+In this bonus lab you will install HammerDB tool and use it to benchmark MSSQL database performance on a given VM.
+
+.. note::
+
+	Performance metrics will differ based on Operating System, SQL Server Design, Database Parameters, and Hardware.
+
+  This exercise is way for you to see how performance differs with proper design. Also note that Nutanix Era deploys database servers with industry best practices. Go ahead test a DB performance in a datbase server deployed by Era.
 
 
 Lab Agenda
