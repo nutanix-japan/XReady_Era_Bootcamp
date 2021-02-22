@@ -31,16 +31,16 @@
    webtier/webtier
    patch_sql/patch_sql
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Era with Oracle Track (Optional)
-   :name: _dbs
-   :hidden:
-
-   configure_oracle/configure_oracle
-   deploy_oracle_era/deploy_oracle_era
-   admin_oracle/admin_oracle
-   patching_oracle/patching_oracle
+.. .. toctree::
+..    :maxdepth: 2
+..    :caption: Era with Oracle Track (Optional)
+..    :name: _dbs
+..    :hidden:
+..
+..    configure_oracle/configure_oracle
+..    deploy_oracle_era/deploy_oracle_era
+..    admin_oracle/admin_oracle
+..    patching_oracle/patching_oracle
 
 .. toctree::
   :maxdepth: 2
@@ -49,9 +49,9 @@
   :hidden:
 
   prismops_appmonitoring_lab/prismops_appmonitoring_lab
-  deploy_oracle_rac_era/deploy_oracle_rac_era
   hammerdb/hammerdb
   era_rest_api/era_rest_api
+..  deploy_oracle_rac_era/deploy_oracle_rac_era
 ..  flow_secure_fiesta/flow_secure_fiesta
   flow_isolate_fiesta/flow_isolate_fiesta
 
